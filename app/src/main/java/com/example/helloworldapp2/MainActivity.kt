@@ -20,14 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-/*
-        val mediaController =MediaController(this)
-        val videoView=findViewById<View>(R.id.videoview)
-        mediaController.setAnchorView(videoView)
-        val onlineuri= Uri.parse("https://www.youtube.com/watch?v=Jd3nTm-wvyA&t=118s")
-        val offlineuri=Uri.parse("android.resource://$packageName/${R.raw.codemovie}")
 
-*/      //android.resource://" + packageName + "/" + R.raw.codemovie)
         val videoView = findViewById<View>(R.id.videoview) as VideoView
         val onlineuri= Uri.parse("https://youtu.be/C1nVzOzEE-c")
         val offlineuri=Uri.parse("android.resource://" + packageName + "/" + R.raw.codes)
